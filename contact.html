@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - Valdyan Arya</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">VALDYAN |<span>| ARYA</span></a>
+
+            <button class="navbar-toggler border-0" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#mainNav"
+                    aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== KONTAK ===== -->
+    <section class="container py-5">
+        <h2 class="section-title">Hubungi Saya</h2>
+
+        <p class="text-center text-secondary mb-4">
+            Punya pertanyaan atau ingin bekerja sama? Kirim pesan ke saya!
+        </p>
+
+        <div class="row g-4">
+
+            <!-- Info Kontak -->
+            <div class="col-lg-6">
+                <div class="glass-card h-100 p-4">
+                    <h3 class="h5 fw-bold mb-4">Informasi Kontak</h3>
+
+                    <p class="d-flex gap-2 mb-3">
+                        <i class="bi bi-geo-alt-fill text-primary fs-5"></i>
+                        <span>
+                            <strong>Alamat:</strong>
+                            Jl. Lap. Tembak, RT.2/RW.10, Klp. Dua Wetan,
+                            Kec. Ciracas, Kota Jakarta Timur,
+                            Daerah Khusus Ibukota Jakarta 13730
+                        </span>
+                    </p>
+
+                    <p class="d-flex gap-2 mb-3">
+                        <i class="bi bi-envelope-fill text-primary fs-5"></i>
+                        <span>
+                            <strong>Email:</strong>
+                            <a href="mailto:valdyanarya1029@gmail.com" class="text-decoration-none">
+                                valdyanarya1029@gmail.com
+                            </a>
+                        </span>
+                    </p>
+
+                    <p class="d-flex gap-2 mb-3">
+                        <i class="bi bi-telephone-fill text-primary fs-5"></i>
+                        <span>
+                            <strong>Telepon:</strong>
+                            <a href="tel:+6285891447313" class="text-decoration-none">
+                                +62 858-9144-7313
+                            </a>
+                        </span>
+                    </p>
+
+                    <p class="d-flex gap-2 mb-4">
+                        <i class="bi bi-globe text-primary fs-5"></i>
+                        <span><strong>Website:</strong> valdyanarya.com</span>
+                    </p>
+
+                    <hr>
+
+                    <h3 class="h5 fw-bold mt-4 mb-3">Sosial Media</h3>
+
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2">
+                            <i class="bi bi-instagram text-danger me-2"></i>
+                            <a href="https://www.instagram.com/abazz.1470/" target="_blank"
+                               class="text-decoration-none">Instagram</a>
+                        </li>
+
+                        <li class="mb-2">
+                            <i class="bi bi-github text-dark me-2"></i>
+                            <a href="https://github.com/ValdyanArya" target="_blank"
+                               class="text-decoration-none">GitHub</a>
+                        </li>
+
+                        <li>
+                            <i class="bi bi-linkedin text-primary me-2"></i>
+                            <a href="https://www.linkedin.com/in/valdyan-arya-ganata-2a28762b8/" target="_blank"
+                               class="text-decoration-none">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Form -->
+            <div class="col-lg-6">
+                <form class="card border-0 shadow-sm rounded-4 p-4 h-100" action="#" method="POST">
+
+                    <div class="mb-3">
+                        <label for="nama" class="form-label">Nama Lengkap</label>
+                        <input type="text" class="form-control" id="nama" name="nama"
+                               placeholder="Masukkan nama..." required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email"
+                               placeholder="email@example.com" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="subjek" class="form-label">Subjek</label>
+                        <input type="text" class="form-control" id="subjek" name="subjek"
+                               placeholder="Subjek pesan...">
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="pesan" class="form-label">Pesan</label>
+                        <textarea class="form-control" id="pesan" name="pesan" rows="5"
+                                  placeholder="Tulis pesan..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100 py-2 mt-auto">
+                        <i class="bi bi-send-fill me-2"></i>Kirim Pesan
+                    </button>
+
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer py-4">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2026 Valdyan Arya Ganata. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
